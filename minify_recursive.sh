@@ -43,7 +43,7 @@ then
 fi
 echo "Minifying all $TYPE files recursively in $CURRENT_DIR $OK_DISPLAY"
 
-for file in `find $PWD -name "*.$TYPE"`
+for file in `find $CURRENT_DIR -name "*.$TYPE"`
   do   
     # Get the current file directory
     FILE_DIRECTORY=$(dirname $file)
